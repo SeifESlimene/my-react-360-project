@@ -5,7 +5,11 @@ import { ReactInstance } from 'react-360-web';
 import LogRocket from 'logrocket';
 
 function initLogRocket(project) {
-  LogRocket.init(project);
+  LogRocket.init(project, {
+    dom: {
+      baseHref: 'https://my-react-360-project.onrender.com/static_assets/',
+    },
+  });
 }
 
 function init(bundle, parent, options = {}) {
@@ -24,9 +28,9 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('hong_kong.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('/static_assets/hong_kong.jpg'));
 }
 
-window.LogRocket = { initLogRocket }
+window.LogRocket = { initLogRocket };
 
 window.React360 = { init };
