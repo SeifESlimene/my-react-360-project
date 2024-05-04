@@ -7,7 +7,7 @@ import LogRocket from 'logrocket';
 function initLogRocket(project) {
   LogRocket.init(project, {
     dom: {
-      baseHref: 'https://my-react-360-project.onrender.com/static_assets/',
+      baseHref: 'https://my-react-360-static-project.onrender.com/build/static_assets/',
     },
   });
 }
