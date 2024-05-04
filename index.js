@@ -31,7 +31,7 @@ export default class my_react_360_project extends React.Component {
 
     if (this.state.isFirstTimePlay) {
       AudioModule.createAudio('sza', {
-        source: asset('/static_assets/haoulou.mp3'),
+        source: asset('haoulou.mp3'),
         volume: 0.5,
       });
       AudioModule.play('sza');

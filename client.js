@@ -28,7 +28,7 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('/static_assets/hong_kong.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('hong_kong.jpg'));
 }
 
 window.LogRocket = { initLogRocket };
